@@ -1,0 +1,95 @@
+﻿[32mΓ£ö API-01 health responds [90m(99.2158ms)[39m[39m
+[32mΓ£ö API-02 allergen list is an array [90m(19.7023ms)[39m[39m
+[32mΓ£ö API-03 validation /api/product-check [90m(52.8436ms)[39m[39m
+[32mΓ£ö API-04 validation /api/barcode-check [90m(6.2923ms)[39m[39m
+[32mΓ£ö API-05 validation /api/label-check [90m(5.8008ms)[39m[39m
+[32mΓ£ö API-06 validation /api/symptom-check [90m(3.2278ms)[39m[39m
+[32mΓ£ö API-07 validation /api/alternatives [90m(14.5359ms)[39m[39m
+[31mΓ£û API-08 validation /api/product-check [90m(11.1354ms)[39m[39m
+[31mΓ£û API-09 validation /api/label-check [90m(6.7122ms)[39m[39m
+[31mΓ£û API-10 validation /api/symptom-check [90m(6.3678ms)[39m[39m
+[32mΓ£ö API-11 label response schema [90m(9.8568ms)[39m[39m
+[31mΓ£û API-12 malformed category is rejected [90m(6.5887ms)[39m[39m
+[34mΓä╣ tests 12[39m
+[34mΓä╣ suites 0[39m
+[34mΓä╣ pass 8[39m
+[34mΓä╣ fail 4[39m
+[34mΓä╣ cancelled 0[39m
+[34mΓä╣ skipped 0[39m
+[34mΓä╣ todo 0[39m
+[34mΓä╣ duration_ms 426.4814[39m
+
+[31mΓ£û failing tests:[39m
+
+test at automation\api.test.cjs:8:378
+[31mΓ£û API-08 validation /api/product-check [90m(11.1354ms)[39m[39m
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  500 !== 400
+  
+      at TestContext.<anonymous> (<QA_PROJECT>\automation\api.test.cjs:8:462)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 500,
+    expected: 400,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at automation\api.test.cjs:8:378
+[31mΓ£û API-09 validation /api/label-check [90m(6.7122ms)[39m[39m
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  500 !== 400
+  
+      at TestContext.<anonymous> (<QA_PROJECT>\automation\api.test.cjs:8:462)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 500,
+    expected: 400,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at automation\api.test.cjs:8:378
+[31mΓ£û API-10 validation /api/symptom-check [90m(6.3678ms)[39m[39m
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  500 !== 400
+  
+      at TestContext.<anonymous> (<QA_PROJECT>\automation\api.test.cjs:8:462)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 500,
+    expected: 400,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at automation\api.test.cjs:10:1
+[31mΓ£û API-12 malformed category is rejected [90m(6.5887ms)[39m[39m
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  200 !== 400
+  
+      at TestContext.<anonymous> (<QA_PROJECT>\automation\api.test.cjs:10:153)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 200,
+    expected: 400,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
